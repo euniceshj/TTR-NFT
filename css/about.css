@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  font-family: Urbanist;
+}
+
+.btn-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  background-color: #94daff;
+}
+
+.nav-link {
+  color: #1098ad;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}

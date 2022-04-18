@@ -1,0 +1,22 @@
+/* Navbar & Header Section */
+.top {
+    height: 500px;
+    background-color: #94DAFF;
+}
+
+.navbar {
+    align-items: center;
+}
+
+/* Carousel Section */
+.carousel-section {
+    height: 300px;
+}
+
+
+/* Footer Section */
+.footer-section {
+    background-color: #99FEFE;
+}
+
+

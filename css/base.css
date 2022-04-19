@@ -1,0 +1,26 @@
+/* Google Fonts
+@font-face {
+    font-family: 'Urbanist';
+    font-style: italic;
+    font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/urbanist/v7/L0x4DF02iFML4hGCyMqgXS9sjg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; */
+/* } */
+    
+    /* Global CSS */
+* {
+    box-sizing: border-box;font-family: 'Urbanist', sans-serif;
+}
+
+
+    /* Navbar & Header Section */
+.navbar {
+    background-color: #94DAFF;
+}
+
+    /* Footer Section */
+.footer-section {
+    background-color: #99FEFE;
+}
+

@@ -1,22 +1,30 @@
-/* Navbar & Header Section */
-.top {
+/* Header Section */
+.header-section {
+    background-image: url("../images/header-background.jpg");
     height: 500px;
-    background-color: #94DAFF;
+    width: 100%;
+    margin-top: 100px;
 }
 
-.navbar {
-    align-items: center;
+.header-section-con1 {
+    flex-basis: 40%;
+}
+
+.header-section-con2 {
+    flex-basis: 60%;
+}
+
+.header-section-con2 img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: none;
+    border-radius: 50%;
 }
 
 /* Carousel Section */
-.carousel-section {
-    height: 300px;
+.carousel img {
+    height: 500px;
 }
 
-
-/* Footer Section */
-.footer-section {
-    background-color: #99FEFE;
-}
-
-
+/* Media Screen */

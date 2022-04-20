@@ -1,4 +1,39 @@
+/* Global CSS */
 * {
     box-sizing: border-box;
     font-family: 'Urbanist', sans-serif;
+}
+
+/* Navbar Section */
+.navbar {
+    background-image: url("../images/header-background.jpg");
+    width: 100%;
+}
+
+.navbar-brand {
+    text-align: center;
+    font-size: 50px;
+}
+
+.navbar-nav li, i {
+    padding: 10px;
+}
+
+.navbar-nav i {
+    font-size: 30px;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #99FEFE;
+    padding: 20px 0;
+}
+
+.footer-section i {
+    font-size: 30px;
+}
+
+.footer-logo {
+    text-align: center;
+    font-size: 50px;
 }

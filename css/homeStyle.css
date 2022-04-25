@@ -1,30 +1,27 @@
 /* Header Section */
-.header-section {
+header {
     background-image: url("../images/header-background.jpg");
-    height: 500px;
-    width: 100%;
-    margin-top: 100px;
+    background-size: cover;
+    padding-top: 100px;
 }
 
-.header-section-con1 {
-    flex-basis: 40%;
-}
-
-.header-section-con2 {
-    flex-basis: 60%;
-}
-
-.header-section-con2 img {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
+.header-con2 img {
+    padding: 30px;
     background-color: none;
     border-radius: 50%;
 }
 
 /* Carousel Section */
 .carousel img {
-    height: 500px;
+    max-height: 768px;
 }
 
-/* Media Screen */
+.card-img-top {
+    height: 50vw;
+    object-fit: cover;
+}
+
+/* Sponsor Section */
+.sponsor-section {
+    background-image: url("../images/header-background.jpg");
+}

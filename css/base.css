@@ -7,7 +7,6 @@
 /* Navbar Section */
 .navbar {
     background-image: url("../images/header-background.jpg");
-    width: 100%;
 }
 
 .navbar-brand {
@@ -21,6 +20,10 @@
 
 .navbar-nav i {
     font-size: 30px;
+}
+
+.ms-n60 {
+    margin-left: -75px;
 }
 
 /* Footer Section */

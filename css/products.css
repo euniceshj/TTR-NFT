@@ -1,3 +1,8 @@
+.container-fluid-slim {
+  width: 80%;
+  margin: auto;
+}
+
 .btn-links {
   display: flex;
   justify-content: center;
@@ -9,13 +14,6 @@
   margin: 20px;
   border-radius: 10px;
   padding: 5px 25px;
-}
-.navbar {
-  background-color: #94daff;
-}
-
-.nav-link {
-  color: #1098ad;
 }
 
 .product-header {
@@ -39,11 +37,11 @@
   bottom: 0;
   right: 0;
   z-index: 2;
-  color: black;
+  color: #fff;
 }
 
 .like-button > button:hover {
-  background-color: red;
+  color: red;
 }
 
 .item-price {
@@ -65,4 +63,8 @@
 
 .card {
   margin-bottom: 20px;
+}
+
+.footer-section {
+  background-color: #94daff;
 }

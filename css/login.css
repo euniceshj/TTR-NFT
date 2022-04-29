@@ -1,5 +1,26 @@
+.form-section{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .login-section {
-    top: 250px;
-    position: relative;
+    margin-top: 150px;
+    /* position: relative; */
+    
 }
 
+h1 {
+    margin: 20px 0px;
+    font-weight: bold;
+
+}
+
+.form-margin {
+    margin: 5px 0px;
+}
+
+.forgetPW-margin {
+    margin: 5px 0px 100px 0px;
+}
+
+.button-margin {
+    margin: 100px 0px 20px 0px;
+}

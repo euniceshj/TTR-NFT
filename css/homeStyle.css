@@ -1,6 +1,7 @@
 /* Header Section */
 header {
-    background-image: url("../images/header-background.jpg");
+    background-color: white;
+    background-image: linear-gradient(to bottom, transparent, white), url("../images/header-background.jpg");
     background-size: cover;
     padding-top: 100px;
 }
@@ -9,6 +10,7 @@ header {
     padding: 30px;
     background-color: none;
     border-radius: 50%;
+    opacity: 70%;
 }
 
 /* Carousel Section */
@@ -21,7 +23,16 @@ header {
     object-fit: cover;
 }
 
+.carousel .carousel-indicators button {
+    background-color: #94DAFF;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 10px;
+  }
+
 /* Sponsor Section */
 .sponsor-section {
     background-image: url("../images/header-background.jpg");
+    opacity: 0.9;
 }

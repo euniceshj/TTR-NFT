@@ -46,9 +46,9 @@ document.querySelector("#navbar-section").innerHTML = `
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="">
-                            <i class="bi bi-wallet2 d-none d-lg-block"></i>
-                        </a>
+                        <div>
+                            <i class="bi bi-wallet2 d-none d-lg-block text-secondary"></i>
+                        </div>
                         <a href="" class="nav-link button btn-primary rounded text-center text-white d-block d-lg-none">Connect Wallet</a>
                     </li>
                 </ul>
@@ -70,15 +70,16 @@ document.querySelector("footer").innerHTML = `
                         <h4>Join the community</h4>
                     </div>
                     
-                    <div class="row-3 pt-2">
-                        <a href="" class="col pe-3"><i class="bi bi-github"></i></a>
-                        <a href="" class="col pe-3"><i class="bi bi-discord"></i></a>
-                        <a href="" class="col pe-3"><i class="bi bi-twitter"></i></a>
+                    <div class="row-3 pt-2 d-flex">
+                        <a href="https://github.com/euniceshj/TTR-NFT" class="pe-3"><i class="bi bi-github"></i></a>
+                        <div class="pe-3"><i class="bi bi-discord  text-secondary"></i></div>
+                        <div class="pe-3"><i class="bi bi-twitter text-secondary"></i></div>
+                        <div class="pe-3"><i class="bi bi-telegram text-secondary"></i></div>
                     </div>
                 </div>
             </div>
             <hr class="bg-dark">
-            <div class="row">
+            <div class="row footer-text">
                 <div class="col">
                     <p class="text-center text-md-start">@ Copyright 2022 TTR</p>
                 </div>

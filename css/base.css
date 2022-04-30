@@ -21,7 +21,7 @@
 
 .navbar-nav i {
     padding: 10px;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .offset-n40 {
@@ -53,7 +53,7 @@
     font-weight: 700;
 }
 
-.footer-section p {
+.footer-section .footer-text p {
     font-size: 1rem;
     font-weight: 700;
 }

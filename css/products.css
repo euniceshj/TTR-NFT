@@ -1,26 +1,35 @@
 .container-fluid-slim {
   width: 80%;
   margin: auto;
+  margin-top: 50px;
 }
 
 .btn-links {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 30px;
+  margin-top: 180px;
+  margin-bottom: 60px;
 }
 
 .btn-group > button {
   margin: 20px;
-  border-radius: 10px;
   padding: 5px 25px;
+  font-size: 20px;
+}
+
+.btn.dropdown-toggle {
+  background-color: #94daff;
 }
 
 .product-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
+}
+
+.product-header > h2 {
+  font-size: 44px;
 }
 
 .like-button {
@@ -62,7 +71,12 @@
 }
 
 .card {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.modal-card-title {
+  font-weight: 700;
+  font-size: 32px;
 }
 
 .footer-section {

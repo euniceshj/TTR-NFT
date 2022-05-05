@@ -21,7 +21,8 @@
     <!-- Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,600;1,100;1,900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -34,72 +35,37 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container-fluid">
-          <a class="navbar-brand col-sm-2" href="#">TTR NFT</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto flex-fill justify-content-around align-items-center">
-                  <li class="nav-item col-3">
-                    <div class="input-group">
-                      <input class="form-control border-end-0 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-                      <span>
-                          <button class="btn btn-outline-secondary bg-white border-0 rounded-pill ms-n60" type="button">
-                              <i class="bi bi-search"></i>
-                          </button>
-                      </span>
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link">Products</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link">Listing</a>
-                  </li>
-                  <li class="nav-item">
-                  <a href=""><i class="bi bi-person-circle"></i></a>
-                  </li>
-                  <li class="nav-item">
-                  <a href=""><i class="bi bi-wallet2"></i></a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
+      <!--Nav Bar Section -->
+    <div id="navbar-section">
+      <!-- innerHTML from CSS -->
+    </div>
 
 
-<div class="container-fluid px-0">
+  <div class="container-fluid px-0">
  
 
     <!-- link tabs-->
 
     <div class="btn-links">
       <div class="btn-group">
-        <button class="btn btn-outline-primary">
+        <button class="btn btn-lg btn-outline-primary">
           <i class="fa fa-camera"></i> Photography
         </button>
-        <button class="btn btn-outline-primary">
+        <button class="btn btn-lg btn-outline-primary">
           <i class="fa fa-music"></i> Music
         </button>
-        <button class="btn btn-outline-primary">
+        <button class="btn btn-lg btn-outline-primary">
           <i class="fa-solid fa-palette"></i> Art
         </button>
-        <button class="btn btn-outline-primary">
+        <button class="btn btn-lg btn-outline-primary">
           <i class="fa-solid fa-baseball-bat-ball"></i> Sports
         </button>
-        <button class="btn btn-outline-primary">
+        <button class="btn btn-lg btn-outline-primary">
           <i class="fa fa-tags"></i> Collectibles
         </button>
       </div>
     </div>
+    
 
     <!--Product header-->
     <div class="container-fluid-slim">
@@ -107,7 +73,7 @@
         <h2>Shop all NFTs</h2>
         <div class="dropdown">
           <button
-            class="btn btn-info dropdown-toggle"
+            class="btn dropdown-toggle"
             type="button"
             id="dropdownMenuButton1"
             data-bs-toggle="dropdown"
@@ -127,282 +93,289 @@
     </div>
 
     <!--Product listings-->
+
     <div class="container-fluid-slim">
-      <div class="row">
-        <div class="card col-xxl-3 col-xl-4 col-md-6">
-          <div class="like-button">
-            <img
-              src="images/library-of-congress-jnrxBoiLSYA-unsplash.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <button class="btn btn-lg">
-              <i class="fa-solid fa-heart"></i>
-            </button>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Three Thorns 1 Rose</h4>
-            <div class="item-price">
-              <h5>List price: $199</h5>
-              <a href="#" class="btn btn-primary">Buy now</a>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="like-button">
+              <img
+                src="images/library-of-congress-jnrxBoiLSYA-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <button class="btn btn-lg">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Three Thorns 1 Rose</h4>
+              <div class="item-price">
+                <h5>List price: $199</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card col-xxl-3 col-xl-4 col-md-6">
-          <div class="like-button">
-            <img
-              src="images/tatiana-zhukova-nVVQlJAcEDc-unsplash.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <button class="btn btn-lg">
-              <i class="fa-solid fa-heart"></i>
-            </button>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Portrait of a Lady</h4>
-            <div class="item-price">
-              <h5>List price: $199</h5>
-              <a href="#" class="btn btn-primary">Buy now</a>
+        <div class="col">
+          <div class="card">
+            <div class="like-button">
+              <img
+                src="images/tatiana-zhukova-nVVQlJAcEDc-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <button class="btn btn-lg">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Portrait of a Lady</h4>
+              <div class="item-price">
+                <h5>List price: $199</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card col-xxl-3 col-xl-4 col-md-6">
-          <div class="like-button">
-            <img
-              src="images/wesley-tingey-aysHFfjCBDk-unsplash.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <button class="btn btn-lg">
-              <i class="fa-solid fa-heart"></i>
-            </button>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Autumn in Spring</h4>
-            <div class="item-price">
-              <h5>List price: $199</h5>
-              <a href="#" class="btn btn-primary">Buy now</a>
+        <div class="col">
+          <div class="card">
+            <div class="like-button">
+              <img
+                src="images/wesley-tingey-aysHFfjCBDk-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <button class="btn btn-lg">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Autumn in Spring</h4>
+              <div class="item-price">
+                <h5>List price: $199</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card col-xxl-3 col-xl-4 col-md-6">
-          <div class="like-button">
-            <img
-              src="images/ernily-5ytbbjqM4js-unsplash.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <button class="btn btn-lg">
-              <i class="fa-solid fa-heart"></i>
-            </button>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">The Watcher</h4>
-            <div class="item-price">
-              <h5>List price: $199</h5>
-              <a href="#" class="btn btn-primary">Buy now</a>
+        <div class="col">
+          <div class="card">
+            <div class="like-button">
+              <img
+                src="images/ernily-5ytbbjqM4js-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <button class="btn btn-lg">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">The Watcher</h4>
+              <div class="item-price">
+                <h5>List price: $199</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card col-xxl-3 col-xl-4 col-md-6">
-          <div class="like-button">
-            <img
-              src="images/birmingham-museums-trust-KfRUve5NtO8-unsplash.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <button class="btn btn-lg">
-              <i class="fa-solid fa-heart"></i>
-            </button>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Birds of a feather</h4>
-            <div class="item-price">
-              <h5>List price: $199</h5>
-              <a href="#" class="btn btn-primary">Buy now</a>
+        <div class="col">
+          <div class="card">
+            <div class="like-button">
+              <img
+                src="images/birmingham-museums-trust-KfRUve5NtO8-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <button class="btn btn-lg">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Birds of a feather</h4>
+              <div class="item-price">
+                <h5>List price: $199</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card col-xxl-3 col-xl-4 col-md-6">
-          <div class="like-button">
-            <img
-              src="images/chris-curry-wvYdfoWPaQM-unsplash.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <button class="btn btn-lg">
-              <i class="fa-solid fa-heart"></i>
-            </button>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Chocolate</h4>
-            <div class="item-price">
-              <h5>List price: $199</h5>
-              <a href="#" class="btn btn-primary">Buy now</a>
+        <div class="col">
+          <div class="card">
+            <div class="like-button">
+              <img
+                src="images/chris-curry-wvYdfoWPaQM-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <button class="btn btn-lg">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Chocolate</h4>
+              <div class="item-price">
+                <h5>List price: $199</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card col-xxl-3 col-xl-4 col-md-6">
-          <div class="like-button">
-            <img
-              src="images/markus-spiske-dAoXy6_XzQc-unsplash.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <button class="btn btn-lg">
-              <i class="fa-solid fa-heart"></i>
-            </button>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Hoodie Guy</h4>
-            <div class="item-price">
-              <h5>List price: $199</h5>
-              <a href="#" class="btn btn-primary">Buy now</a>
+        <div class="col">
+          <div class="card">
+            <div class="like-button">
+              <img
+                src="images/markus-spiske-dAoXy6_XzQc-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <button class="btn btn-lg">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Hoodie Guy</h4>
+              <div class="item-price">
+                <h5>List price: $199</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card col-xxl-3 col-xl-4 col-md-6">
-          <div class="like-button">
-            <img
-              src="images/british-library-HVvXTQVHCV0-unsplash.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <button class="btn btn-lg">
-              <i class="fa-solid fa-heart"></i>
-            </button>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Petal in bloom</h4>
-            <div class="item-price">
-              <h5>List price: $199</h5>
-              <a href="#" class="btn btn-primary">Buy now</a>
+        <div class="col">
+          <div class="card">
+            <div class="like-button">
+              <img
+                src="images/british-library-HVvXTQVHCV0-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <button class="btn btn-lg">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Petal in bloom</h4>
+              <div class="item-price">
+                <h5>List price: $199</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card col-xxl-3 col-xl-4 col-md-6">
-          <div class="like-button">
-            <img
-              src="images/annie-spratt-spaz905gPTY-unsplash.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <button class="btn btn-lg">
-              <i class="fa-solid fa-heart"></i>
-            </button>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Friends Forever</h4>
-            <div class="item-price">
-              <h5>List price: $199</h5>
-              <a href="#" class="btn btn-primary">Buy now</a>
+        <div class="col">
+          <div class="card">
+            <div class="like-button">
+              <img
+                src="images/annie-spratt-spaz905gPTY-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <button class="btn btn-lg">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Friends Forever</h4>
+              <div class="item-price">
+                <h5>List price: $199</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card col-xxl-3 col-xl-4 col-md-6">
-          <div class="like-button">
-            <img
-              src="images/nicola-ambrosi-os4NG8aHcLM-unsplash.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <button class="btn btn-lg">
-              <i class="fa-solid fa-heart"></i>
-            </button>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Eyeliss</h4>
-            <div class="item-price">
-              <h5>List price: $199</h5>
-              <a href="#" class="btn btn-primary">Buy now</a>
+        <div class="col">
+          <div class="card">
+            <div class="like-button">
+              <img
+                src="images/nicola-ambrosi-os4NG8aHcLM-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <button class="btn btn-lg">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Eyeliss</h4>
+              <div class="item-price">
+                <h5>List price: $199</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card col-xxl-3 col-xl-4 col-md-6">
-          <div class="like-button">
-            <img
-              src="images/malcolm-lightbody-fDzBBDflzEw-unsplash.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <button class="btn btn-lg">
-              <i class="fa-solid fa-heart"></i>
-            </button>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Life</h4>
-            <div class="item-price">
-              <h5>List price: $199</h5>
-              <a href="#" class="btn btn-primary">Buy now</a>
+        <div class="col">
+          <div class="card">
+            <div class="like-button">
+              <img
+                src="images/malcolm-lightbody-fDzBBDflzEw-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <button class="btn btn-lg">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Life</h4>
+              <div class="item-price">
+                <h5>List price: $199</h5>
+                <a href="#" class="btn btn-primary">Buy now</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card col-xxl-3 col-xl-4 col-md-6">
-          <div class="like-button">
-            <img
-              src="images/jakub-durian-atGk-qalHsM-unsplash.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <button class="btn btn-lg">
-              <i class="fa-solid fa-heart"></i>
-            </button>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Lady in color</h4>
-            <div class="item-price">
-              <h5>List price: $199</h5>
-              <a
-                href="#"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-                >Buy now</a
-              >
+        <div class="col">
+          <div class="card">
+            <div class="like-button">
+              <img
+                src="images/jakub-durian-atGk-qalHsM-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <button class="btn btn-lg">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Lady in color</h4>
+              <div class="item-price">
+                <h5>List price: $199</h5>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >Buy now</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
 
-    <!--Footer-->
+    
+    
 
-    <div class="container-fluid footer-section">
-        <div class="row align-items-center">
-            <div class="col-sm-4">
-                <p class="footer-logo">TTR NFT</p>
-            </div>
-            <div class="col-sm-8">
-
-              <div class="row">
-                <p>Join the community</p>
-              </div>
-              
-              <div class="row-3">
-                <a href="" class="col"><i class="bi bi-github"></i></a>
-                <a href="" class="col"><i class="bi bi-discord"></i></a>
-                <a href="" class="col"><i class="bi bi-twitter"></i></a>
-              </div>
-
-              <div class="row">
-                <p>@ Copyright 2022 TTR</p>
-              </div>
-
-            </div>
-        </div>
-    </div>
+    <!--Footer Section-->
+    <footer>
+      <!-- innerHTML from CSS-->
+    </footer>
 
     <!-- Modal -->
 
@@ -416,7 +389,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Portrait of a Lady</h5>
+            
             <button
               type="button"
               class="btn-close"
@@ -436,16 +409,15 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title modal-card-title">Portrait of a lady</h5>
                     <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!
                     </p>
                     <p class="card-text">
-                      <p><small class="text-muted">Last updated 3 mins ago</small></p>
-                      <p><small class="text-muted">Last updated 3 mins ago</small></p>
-                      <p><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <p><small class="text-muted">Author: Mark Jenkins</small></p>
+                      <p><small class="text-muted">List price: $199</small></p>
+                      <p><small class="text-muted">#female #glasses #model #Photography </small></p>
+                      <p><small class="text-muted">109 views</small></p>
                       
                     </p>
                   </div>
@@ -454,6 +426,10 @@
             </div>
           </div>
           <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Buy now</button>
+            <button class="btn btn-primary">
+            Like <i class="fa-solid fa-thumbs-up"></i>
+            </button>
             <button
               type="button"
               class="btn btn-secondary"
@@ -461,7 +437,6 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -472,5 +447,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/baseStyle.js"></script>
   </body>
 </html>

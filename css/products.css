@@ -12,7 +12,7 @@
 }
 
 .btn-group > button {
-  margin: 20px;
+  margin: 40px;
   padding: 5px 25px;
   font-size: 20px;
 }
@@ -30,6 +30,8 @@
 
 .product-header > h2 {
   font-size: 44px;
+  font-family: "Aleo", serif;
+  font-style: italic;
 }
 
 .like-button {
@@ -81,4 +83,24 @@
 
 .footer-section {
   background-color: #94daff;
+}
+
+/* @media screen and (max-width: 768px) {
+  .btn-group {
+    display: none;
+  }
+} */
+
+@media (max-width: 768px) {
+  .btn.btn-lg {
+    padding: 4px 16px;
+    font-size: 80%;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 535px) {
+  .btn.btn-lg {
+    display: none;
+  }
 }

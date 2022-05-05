@@ -1,8 +1,9 @@
+// Common nav bar
 document.querySelector("#navbar-section").innerHTML = `
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand col-sm-3 col-lg-2" href="#">TTR NFT</a>
-            <div class="navbar-header col-4 col-sm-6 px-2 d-lg-none display-4">
+            <div class="navbar-header col-4 col-sm-6 px-2 d-none d-sm-block d-lg-none display-4">
                 <div class="input-group">
                     <input class="form-control border-end-0 rounded-pill" type="search" placeholder="Search" aria-label="Search">
                     <span>
@@ -17,7 +18,7 @@ document.querySelector("#navbar-section").innerHTML = `
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto flex-fill justify-content-lg-around align-items-lg-center">
-                    <li class="nav-item col-3 d-none d-lg-block">
+                    <li class="nav-item col-12 col-lg-3 d-block d-sm-none d-lg-block">
                         <div class="input-group">
                             <input class="form-control border-end-0 rounded-pill" type="search" placeholder="Search" aria-label="Search">
                             <span>
@@ -28,15 +29,15 @@ document.querySelector("#navbar-section").innerHTML = `
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active fst-italic" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item fst-italic">
                         <a class="nav-link" href="#">About Us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item fst-italic">
                         <a class="nav-link">Products</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item fst-italic">
                         <a class="nav-link">Create</a>
                     </li>
                     <li class="nav-item">
@@ -60,16 +61,16 @@ document.querySelector("#navbar-section").innerHTML = `
 document.querySelector("footer").innerHTML = `
     <div class="footer-section container-fluid py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <p class="footer-logo">TTR NFT</p>
+            <div class="row ">
+                <div class="col-12 col-md-6">
+                    <p class="footer-logo text-md-end text-center pe-md-5 pe-0">TTR NFT</p>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-md-6">
                     <div class="row">
-                        <h4>Join the community</h4>
+                        <h4 class="text-md-start text-center">Join the community</h4>
                     </div>
                     
-                    <div class="row-3 pt-2 d-flex">
+                    <div class="row-3 pt-2 d-flex justify-content-md-start justify-content-center">
                         <a href="https://github.com/euniceshj/TTR-NFT" class="pe-3"><i class="bi bi-github"></i></a>
                         <div class="pe-3"><i class="bi bi-discord  text-secondary"></i></div>
                         <div class="pe-3"><i class="bi bi-twitter text-secondary"></i></div>

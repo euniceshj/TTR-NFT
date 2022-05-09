@@ -3,24 +3,24 @@ header {
     background-color: white;
     background-image: linear-gradient(to bottom, transparent, white), url("../images/header-background.jpg");
     background-size: cover;
-    padding-top: 100px;
+    margin-top: 95px !important;
+    padding-top: 55px;
 }
 
 .header-con2 img {
     padding: 30px;
     background-color: none;
-    border-radius: 50%;
     opacity: 70%;
 }
 
 /* Carousel Section */
-.carousel img {
-    max-height: 768px;
+.card-img-top {
+    height: 40vw;
+    object-fit: cover;
 }
 
-.card-img-top {
-    height: 50vw;
-    object-fit: cover;
+.carousel-inner {
+    padding-bottom: 20px;
 }
 
 .carousel .carousel-indicators button {
@@ -36,5 +36,16 @@ header {
 
 /* Sponsor Section */
 .sponsor-section {
-    background-image: linear-gradient(white, rgba(148, 218, 255, 0.9))
+    /* background-image: linear-gradient(white, white, white, white, rgba(148, 218, 255, 0.9)) */
 }
+
+.sponsor-section img {
+    max-height: 200px;
+}
+
+/* Contact Us Section */
+.contact-section {
+    background-color: #94DAFF;
+    opacity: 0.9;
+}
+

@@ -65,32 +65,34 @@ document.querySelector("#navbar-section").innerHTML = `
 
 // Common footer
 document.querySelector("footer").innerHTML = `
-    <div class="footer-section row pt-3">
+    <div class="footer-section row pt-4 pb-3">
         <div class="col">
             <div class="row footer-text">
-                <div class="col col-md-4 col-lg-6">
+                <div class="col-12 col-md-4 col-lg-3">
                     <p class="text-center text-md-start">@ Copyright 2022 TTR</p>
                 </div>
 
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="row">
-                        <p class="text-center d-none d-md-block">Join the Community</p>
-                    </div>
-                    
-                    <div class="row-3 py-2 d-flex justify-content-center">
-                        <div>
-                        <a href="https://github.com/euniceshj/TTR-NFT" class="ps-3 pe-3"><i class="bi bi-github"></i></a>
+                <div class="col-12 col-md-4 col-lg-5">
+                    <div class="row"> 
+                        <div class="col-lg-7 d-none d-lg-block px-0">
+                            <p class="text-end">Join the Community</p>
                         </div>
-                        <div class="pe-3"><i class="bi bi-discord  text-secondary"></i></div>
-                        <div class="pe-3"><i class="bi bi-twitter text-secondary"></i></div>
-                        <div class="pe-3"><i class="bi bi-telegram text-secondary"></i></div>
+                        
+                        <div class="col-12 col-lg-5 d-flex justify-content-center">
+                            <div>
+                            <a href="https://github.com/euniceshj/TTR-NFT" class="ps-3 pe-3"><i class="bi bi-github"></i></a>
+                            </div>
+                            <div class="pe-3"><i class="bi bi-discord  text-secondary"></i></div>
+                            <div class="pe-3"><i class="bi bi-twitter text-secondary"></i></div>
+                            <div class="pe-3"><i class="bi bi-telegram text-secondary"></i></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="d-flex justify-content-center justify-content-md-end">
-                        <p class="ps-3 pe-3">Privacy Policy</p>
-                        <p class="pe-3">Terms of Service</p>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="d-flex flex-row justify-content-center justify-content-md-end px-0">
+                        <p class="ps-3 pe-2">Privacy Policy</p>
+                        <p class="pe-2">Terms of Service</p>
                     </div>
                 </div>
             </div>

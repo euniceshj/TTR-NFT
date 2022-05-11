@@ -37,44 +37,36 @@
             
             <div class="row">
                 <form>
+                    <!--- Name of collection field --->
                     <div class="form-group">
                         <label for="nameOfCollection" class="form-margin">Name Of Collection</label>
                         <input type="text" class="form-control collectionField-margin" id="nameOfCollection" aria-describedby="emailHelp" placeholder="Enter the name of your collection here">
                     </div>
 
+                    <!--- Number of NFTs in collection field --->
                     <div class="form-group">
                         <label for="numberOfNfts" class="form-margin">Number of NFTs in Collection</label>
                         <input type="number" min="1" data-bind="value:replyNumber" class="form-control collectionField-margin" id="numberOfNfts" placeholder="Min. 1 NFT">
                     </div>
-                    <!-- <div class="forgetPW-margin small">
-                        <a href="#">Forgot your password?</a>
-                    </div> -->
 
+                    <!--- List Price field --->
                     <div class="form-group row">
                         <div class="col">
                             <label for="listPrice" class="form-margin"> List Price</label>
                             <input type="text" class="form-control collectionField-margin" id="listPrice" aria-describedby="emailHelp" placeholder="Price of each NFT">
                         </div>
-
-                        <div class="form-group col-md-4">
-                            <label for="ccy" class="form-margin">CCY Option</label>
-                            <select id="ccy" class="col form-control form-control-md collectionField-margin"
-                            >
-                                <option selected disabled>Choose your ccy</option>
-                                <option>ETH</option>
-                                <option>BTC</option>
-                                <option>SOL</option>
-                            </select>
+                    </div>
+                    
+                    <div>
+                        <div class="input-group mb-3 collectionField-margin">
+                            <input type="file" class="form-control" id="inputGroupFile02">
+                            <label class="input-group-text" for="inputGroupFile02">Upload</label>
                         </div>
                     </div>
-                    <!-- <div>
-                        <small class="d-flex justify-content-center">Don't have an account? Click<a href="#"> here </a>to sign up.</small>
-                    </div>
-                    -->
                 
                     <div class="form-group">
                         <label for="description" class="form-margin">Description</label>
-                        <textarea class="form-control form-margin" id="description" rows="3" placeholder="Describe your collection here"></textarea></textarea> 
+                        <textarea class="form-control form-margin collectionField-margin" id="description" rows="3" placeholder="Describe your collection here"></textarea></textarea> 
                     </div>
 
                     <div class="d-flex justify-content-center submitBtn-margin">
@@ -82,6 +74,7 @@
                     </div> 
                     
                 </form>
+                
             </div>
 
         </div>  

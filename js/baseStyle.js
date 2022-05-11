@@ -2,7 +2,9 @@
 document.querySelector("#navbar-section").innerHTML = `
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
+    
             <a class="navbar-brand col-sm-3 col-lg-2" href="#">TTR NFT</a>
+           
             <div class="navbar-header col-4 col-sm-6 px-2 d-none d-sm-block d-lg-none display-4">
                 <div class="input-group">
                     <input class="form-control border-end-0 rounded-pill" type="search" placeholder="Search" aria-label="Search">
@@ -13,11 +15,13 @@ document.querySelector("#navbar-section").innerHTML = `
                     </span>
                 </div>
             </div>
+          
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto flex-fill justify-content-lg-around align-items-lg-center">
+  
                     <li class="nav-item col-12 col-lg-3 d-block d-sm-none d-lg-block">
                         <div class="input-group">
                             <input class="form-control border-end-0 rounded-pill" type="search" placeholder="Search" aria-label="Search">
@@ -59,33 +63,29 @@ document.querySelector("#navbar-section").innerHTML = `
 
 // Common footer
 document.querySelector("footer").innerHTML = `
-    <div class="footer-section container-fluid py-5">
-        <div class="container">
-            <div class="row ">
-                <div class="col-12 col-md-6">
-                    <p class="footer-logo text-md-end text-center pe-md-5 pe-0">TTR NFT</p>
+    <div class="footer-section row pt-3">
+        <div class="col">
+            <div class="row footer-text">
+                <div class="col col-md-4 col-lg-6">
+                    <p class="text-center text-md-start">@ Copyright 2022 TTR</p>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4 col-lg-3">
                     <div class="row">
-                        <h4 class="text-md-start text-center">Join the community</h4>
+                        <p class="text-center d-none d-md-block">Join the Community</p>
                     </div>
                     
-                    <div class="row-3 pt-2 d-flex justify-content-md-start justify-content-center">
-                        <a href="https://github.com/euniceshj/TTR-NFT" class="pe-3"><i class="bi bi-github"></i></a>
+                    <div class="row-3 py-2 d-flex justify-content-center">
+                        <div>
+                        <a href="https://github.com/euniceshj/TTR-NFT" class="ps-3 pe-3"><i class="bi bi-github"></i></a>
+                        </div>
                         <div class="pe-3"><i class="bi bi-discord  text-secondary"></i></div>
                         <div class="pe-3"><i class="bi bi-twitter text-secondary"></i></div>
                         <div class="pe-3"><i class="bi bi-telegram text-secondary"></i></div>
                     </div>
                 </div>
-            </div>
-            <hr class="bg-dark">
-            <div class="row footer-text">
-                <div class="col">
-                    <p class="text-center text-md-start">@ Copyright 2022 TTR</p>
-                </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4 col-lg-3">
                     <div class="d-flex justify-content-center justify-content-md-end">
-                        <p class="pe-3">Privacy Policy</p>
+                        <p class="ps-3 pe-3">Privacy Policy</p>
                         <p class="pe-3">Terms of Service</p>
                     </div>
                 </div>

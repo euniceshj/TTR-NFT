@@ -40,21 +40,12 @@
   opacity: 0.9;
 }
 
-.footer-section i {
-  font-size: 1.8rem;
-}
-
-.footer-section .footer-logo {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: normal;
-}
-
-.footer-section h4 {
-  font-weight: 700;
-}
-
 .footer-section .footer-text p {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
+  margin: 0;
+}
+
+.footer-section i {
+  font-size: 1.3rem;
 }

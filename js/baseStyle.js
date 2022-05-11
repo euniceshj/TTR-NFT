@@ -3,7 +3,7 @@ document.querySelector("#navbar-section").innerHTML = `
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             
-            <a class="navbar-brand col-4 col-sm-3 col-lg-2" href="index.html"><img src="images/brand-logo.jpg" alt="brand-logo-img" class="d-inline-block align-text-center img-fluid"></a>
+            <a class="navbar-brand col-4 col-sm-3 col-lg-2" href="index.html"><img src="images/brand-logo-white.png" alt="brand-logo-img" class="d-inline-block align-text-center img-fluid"></a>
            
             <div class="navbar-header col-4 col-sm-6 px-2 d-none d-sm-block d-lg-none display-4">
                 <div class="input-group">

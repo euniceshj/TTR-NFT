@@ -1,0 +1,51 @@
+/* Header Section */
+header {
+    background-color: white;
+    background-image: linear-gradient(to bottom, transparent, white), url("../images/header-background.jpg");
+    background-size: cover;
+    margin-top: 95px !important;
+    padding-top: 55px;
+}
+
+.header-con2 img {
+    padding: 30px;
+    background-color: none;
+    opacity: 70%;
+}
+
+/* Carousel Section */
+.card-img-top {
+    height: 40vw;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    padding-bottom: 20px;
+}
+
+.carousel .carousel-indicators button {
+    background-color: #94DAFF;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 10px;
+  }
+
+/* Koyok Section */
+
+
+/* Sponsor Section */
+.sponsor-section {
+    /* background-image: linear-gradient(white, white, white, white, rgba(148, 218, 255, 0.9)) */
+}
+
+.sponsor-section img {
+    max-height: 200px;
+}
+
+/* Contact Us Section */
+.contact-section {
+    background-color: #94DAFF;
+    opacity: 0.9;
+}
+

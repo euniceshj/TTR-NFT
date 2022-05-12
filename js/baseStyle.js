@@ -2,8 +2,8 @@
 document.querySelector("#navbar-section").innerHTML = `
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
-    
-            <a class="navbar-brand col-sm-3 col-lg-2" href="#">TTR NFT</a>
+            
+            <a class="navbar-brand col-4 col-sm-3 col-lg-2" href="index.html"><img src="images/brand-logo-white.png" alt="brand-logo-img" class="d-inline-block align-text-center img-fluid"></a>
            
             <div class="navbar-header col-4 col-sm-6 px-2 d-none d-sm-block d-lg-none display-4">
                 <div class="input-group">
@@ -32,24 +32,20 @@ document.querySelector("#navbar-section").innerHTML = `
                             </span>
                         </div>
                     </li>
-<<<<<<< HEAD
-=======
-
->>>>>>> 8cc589bbdc81edc35c512cfdd05486dd0ef7e86b
                     <li class="nav-item">
-                        <a class="nav-link active fst-italic" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active fst-italic" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item fst-italic">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="aboutme.html">About Us</a>
                     </li>
                     <li class="nav-item fst-italic">
-                        <a class="nav-link">Products</a>
+                        <a class="nav-link" href="products.html">Products</a>
                     </li>
                     <li class="nav-item fst-italic">
-                        <a class="nav-link">Create</a>
+                        <a class="nav-link" href="listCollection.html">Create</a>
                     </li>
                     <li class="nav-item">
-                        <a href="">
+                        <a href="loginPage.html">
                             <i class="bi bi-person-circle d-none d-lg-block"></i>
                         </a>
                     </li>
@@ -61,16 +57,9 @@ document.querySelector("#navbar-section").innerHTML = `
                     </li>
                 </ul>
             </div>
-<<<<<<< HEAD
         </div>
     </nav>
 `;
-=======
-
-        </div>
-    </nav>
-`
->>>>>>> 8cc589bbdc81edc35c512cfdd05486dd0ef7e86b
 
 // Common footer
 document.querySelector("footer").innerHTML = `
@@ -80,10 +69,6 @@ document.querySelector("footer").innerHTML = `
                 <div class="col-12 col-md-4 col-lg-3">
                     <p class="text-center text-md-start">@ Copyright 2022 TTR</p>
                 </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 8cc589bbdc81edc35c512cfdd05486dd0ef7e86b
                 <div class="col-12 col-md-4 col-lg-5">
                     <div class="row"> 
                         <div class="col-lg-7 d-none d-lg-block px-0">
@@ -92,7 +77,7 @@ document.querySelector("footer").innerHTML = `
                         
                         <div class="col-12 col-lg-5 d-flex justify-content-center">
                             <div>
-                            <a href="https://github.com/euniceshj/TTR-NFT" class="ps-3 pe-3"><i class="bi bi-github"></i></a>
+                            <a href="https://github.com/euniceshj/TTR-NFT" target="_blank" class="ps-3 pe-3"><i class="bi bi-github"></i></a>
                             </div>
                             <div class="pe-3"><i class="bi bi-discord  text-secondary"></i></div>
                             <div class="pe-3"><i class="bi bi-twitter text-secondary"></i></div>
@@ -100,10 +85,6 @@ document.querySelector("footer").innerHTML = `
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 8cc589bbdc81edc35c512cfdd05486dd0ef7e86b
                 <div class="col-12 col-md-4 col-lg-4">
                     <div class="d-flex flex-row justify-content-center justify-content-md-end px-0">
                         <p class="ps-3 pe-2">Privacy Policy</p>
@@ -113,8 +94,4 @@ document.querySelector("footer").innerHTML = `
             </div>
         </div>
     </div>
-<<<<<<< HEAD
 `;
-=======
-`
->>>>>>> 8cc589bbdc81edc35c512cfdd05486dd0ef7e86b

@@ -166,3 +166,4 @@ nftCollection.addNft(
 );
 
 nftCollection.displayNft();
+nftCollection.filter();

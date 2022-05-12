@@ -95,8 +95,8 @@
     <!--Product listings-->
 
     <div class="container-fluid-slim">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <div class="col">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="nftController">
+        <!-- <div class="col">
           <div class="card border-dark">
             <div class="like-button">
               <img
@@ -364,7 +364,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
           
@@ -398,6 +398,7 @@
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
+                    id="nftImage"
                     src="images/jakub-durian-atGk-qalHsM-unsplash.jpg"
                     class="img-fluid rounded-start"
                     alt="..."
@@ -405,15 +406,15 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title modal-card-title">Portrait of a lady</h5>
-                    <p class="card-text">
+                    <h5 class="card-title modal-card-title" id="nftTitle">Portrait of a lady</h5>
+                    <p class="card-text" id="nftDescription">
                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!
                     </p>
                     <p class="card-text">
-                      <p><small class="text-muted">Author: Mark Jenkins</small></p>
-                      <p><small class="text-muted">List price: $199</small></p>
-                      <p><small class="text-muted">#female #glasses #model #Photography </small></p>
-                      <p><small class="text-muted">109 views</small></p>
+                      <p><small class="text-muted" id="nftAuthor">Author: Mark Jenkins</small></p>
+                      <p><small class="text-muted" id="nftPrice">List price: $199</small></p>
+                      <p><small class="text-muted" id="nftHashtag">#female #glasses #model #Photography </small></p>
+                      <p><small class="text-muted" id="nftViews">109 views</small></p>
                       
                     </p>
                   </div>
@@ -443,6 +444,8 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/nftController.js"></script>
+    <script src="./js/displayNft.js"></script>
     <script src="./js/baseStyle.js"></script>
   </body>
 </html>

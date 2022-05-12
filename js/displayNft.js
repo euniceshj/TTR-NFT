@@ -5,7 +5,6 @@ nftCollection.addNft(
   "images/library-of-congress-jnrxBoiLSYA-unsplash.jpg",
   499,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Mark Jenkins",
   "#TTR #watercolor #flowers #photography",
   "109 views",
   "photography"
@@ -16,7 +15,6 @@ nftCollection.addNft(
   "images/tatiana-zhukova-nVVQlJAcEDc-unsplash.jpg",
   350,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Mary Cooper",
   "#female #portrait #blackandwhite #photography",
   "246 views",
   "sports"
@@ -27,7 +25,6 @@ nftCollection.addNft(
   "images/wesley-tingey-aysHFfjCBDk-unsplash.jpg",
   545,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Louise Poppins",
   "#seasons #branches #art",
   "168 views",
   "art"
@@ -38,7 +35,6 @@ nftCollection.addNft(
   "images/ernily-5ytbbjqM4js-unsplash.jpg",
   299,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Antonio De Souza",
   "#surreal #redeye #realistic #sports",
   "205 views",
   "sports"
@@ -49,7 +45,6 @@ nftCollection.addNft(
   "images/birmingham-museums-trust-KfRUve5NtO8-unsplash.jpg",
   415,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Mary Chay",
   "#nature #birds #painting #music",
   "201 views",
   "music"
@@ -60,7 +55,6 @@ nftCollection.addNft(
   "images/chris-curry-wvYdfoWPaQM-unsplash.jpg",
   226,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Candy Foo",
   "#animal #dog #pet #collectibles",
   "339 views",
   "collectibles"
@@ -71,7 +65,6 @@ nftCollection.addNft(
   "images/markus-spiske-dAoXy6_XzQc-unsplash.jpg",
   69,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Mark Jenkins",
   "#cartoon #hoodie #color #art",
   "304 views",
   "art"
@@ -82,7 +75,6 @@ nftCollection.addNft(
   "images/british-library-HVvXTQVHCV0-unsplash.jpg",
   250,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Stephen Howzing",
   "#flower #brightcolor #bloom #art",
   "260 views",
   "art"
@@ -93,7 +85,6 @@ nftCollection.addNft(
   "images/annie-spratt-spaz905gPTY-unsplash.jpg",
   380,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Waseem Hamid",
   "#friends #children #playing #art",
   "299 views",
   "art"
@@ -104,7 +95,6 @@ nftCollection.addNft(
   "images/nicola-ambrosi-os4NG8aHcLM-unsplash.jpg",
   335,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Jean Cox",
   "#female #wistful #portrait #Photography",
   "445 views",
   "photography"
@@ -115,7 +105,6 @@ nftCollection.addNft(
   "images/malcolm-lightbody-fDzBBDflzEw-unsplash.jpg",
   360,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Walter Smith",
   "#color #motivational #poster #sports",
   "288 views",
   "sports"
@@ -126,7 +115,6 @@ nftCollection.addNft(
   "images/jakub-durian-atGk-qalHsM-unsplash.jpg",
   650,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Christy Aguero",
   "#female #watercolor #portrait #Photography",
   "513 views",
   "photography"
@@ -137,7 +125,6 @@ nftCollection.addNft(
   "images/mick-haupt-cOWbHptqdBM-unsplash.jpg",
   275,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Mick Haupt",
   "#cards #glasses #cd #covers #collectibles",
   "311 views",
   "collectibles"
@@ -148,7 +135,6 @@ nftCollection.addNft(
   "images/luana-azevedo-YBTLqyeSpoY-unsplash.jpg",
   299,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Luana Azevedo",
   "#guitar #studio #soundofmusic #music",
   "437 views",
   "music"
@@ -159,7 +145,6 @@ nftCollection.addNft(
   "images/jordon-conner-tor-PWgSYB4-unsplash.jpg",
   180,
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!",
-  "Jordon Conner",
   "#people #party #dance #music",
   "222 views",
   "music"

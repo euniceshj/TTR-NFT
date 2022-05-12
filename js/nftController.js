@@ -6,7 +6,7 @@ class NftController {
     this.like = 0;
   }
 
-  addNft(title, imageURL, price, description, author, hashtag, view, category) {
+  addNft(title, imageURL, price, description, hashtag, view, category) {
     this.currentId++;
 
     const nft = {
@@ -14,7 +14,6 @@ class NftController {
       price: price,
       imageURL: imageURL,
       description: description,
-      author: author,
       hashtag: hashtag,
       view: view,
       category: category,
@@ -66,28 +65,14 @@ class NftController {
         displayNftDetail(nft);
       });
     });
-  }
-
-  addLike() {
-    //addeventlistener on every like button, increase this.like by 1
-    let nftid = "";
 
     this.allNfts.forEach((nft, index) => {
       nftid = "nft" + index;
       document.getElementById(nftid).addEventListener("click", function () {
-        this.like++;
+        addLike(nft);
       });
     });
-
-    //Create span.span.innerText = this.like.
   }
-
-  // filter() {
-  //   const filtered = this.allNfts.filter((nft) => {
-  //     nft.category === "photography";
-  //   });
-  //   console.log(filtered);
-  // }
 
   filter() {
     const filtered = this.allNfts.filter(
@@ -101,15 +86,18 @@ const displayNftDetail = function (nft) {
   document.querySelector("#nftTitle").innerHTML = nft.title;
   document.querySelector("#nftImage").src = nft.imageURL;
   document.querySelector("#nftDescription").innerHTML = nft.description;
-  document.querySelector("#nftAuthor").innerHTML = `Author: ${nft.author}`;
   document.querySelector("#nftPrice").innerHTML = `Price: $${nft.price}`;
   document.querySelector("#nftHashtag").innerHTML = nft.hashtag;
   document.querySelector("#nftViews").innerHTML = nft.view;
   document.querySelector("#nftLikes").innerHTML = `No. of likes: ${nft.like}`;
 };
 
-const handleDropDown = function (event) {
-  console.log("Hello");
+const addLike = function (nft) {
+  nft.like++;
 };
 
-document.querySelector(".dropdown").addEventListener("click", handleDropDown);
+const filterDropDown = function (event) {
+  console.log(event.target.value);
+};
+
+document.querySelector(".dropdown").addEventListener("click", filterDropDown);

@@ -60,6 +60,7 @@ document.querySelector("#navbar-section").innerHTML = `
         </div>
     </nav>
 `;
+
 // Common footer
 document.querySelector("footer").innerHTML = `
     <div class="footer-section row pt-4 pb-3">

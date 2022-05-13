@@ -4,10 +4,7 @@
 
 .card-title {
     font-weight: bold;
-    
-
 }
-
 
 .corner {
     border-radius: 50px;
@@ -21,11 +18,11 @@
     align-self: flex-end;
 }
 
-.low{
+.low {
     display: flex;
     flex-direction: column;
 }
 
 .car.corner {
-    display: flex;   
+    display: flex;
 }

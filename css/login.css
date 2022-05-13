@@ -1,10 +1,10 @@
-.form-section{
-    font-family:'Arial', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+.form-section {
+    font-family: "Arial", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", sans-serif;
 }
 .login-section {
     margin-top: 150px;
     /* position: relative; */
-    
 }
 
 h1 {
@@ -32,5 +32,5 @@ h1 {
 }
 
 .collectionField-margin {
-    margin:5px 0px 20px 0px;
+    margin: 5px 0px 20px 0px;
 }

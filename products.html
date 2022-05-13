@@ -41,27 +41,23 @@
       <!-- innerHTML from CSS -->
     </div>
 
-
-  
- 
-
     <!-- link tabs-->
 
     <div class="btn-links">
       <div class="btn-group">
-        <button class="btn btn-lg">
+        <button class="btn btn-lg" id="photography">
           <i class="fa fa-camera"></i> Photography
         </button>
-        <button class="btn btn-lg">
+        <button class="btn btn-lg" id="music">
           <i class="fa fa-music"></i> Music
         </button>
-        <button class="btn btn-lg">
+        <button class="btn btn-lg" id="art">
           <i class="fa-solid fa-palette"></i> Art
         </button>
-        <button class="btn btn-lg">
+        <button class="btn btn-lg" id="sports">
           <i class="fa-solid fa-baseball-bat-ball"></i> Sports
         </button>
-        <button class="btn btn-lg">
+        <button class="btn btn-lg"id="collectibles">
           <i class="fa fa-tags"></i> Collectibles
         </button>
       </div>
@@ -71,17 +67,28 @@
     <div class="container-fluid-slim">
       <div class="product-header">
         <h2>Shop all NFTs</h2>
-        <select class="selectpicker" 
-        data-style="btn-success">
-        <option value="Pizzas">Pizzas</option>
-        <option value="Burger">Burger</option>
-        <option value="Ice Cream">Ice Cream</option>
-        <option value="Fried Potatoes">Fried Potatoes</option>
-    </select>
+          <div class="dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Select an option
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#" id="art2">Art</a></li>
+            <li><a class="dropdown-item" href="#" id="photography2">Photography</a></li>
+            <li><a class="dropdown-item" href="#" id="music2">Music</a></li>
+            <li><a class="dropdown-item" href="#" id="sports2">Sports</a></li>
+            <li><a class="dropdown-item" href="#" id="collectibles2">Collectibles</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <!--Product listings-->
+        <!--Product listings-->
 
     <div class="container-fluid-slim">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="nftController">

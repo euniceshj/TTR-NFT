@@ -26,7 +26,6 @@ function clearInput() {
 
 // function handle form submission
 function submitForm() {
-
     // store input values into variables
     const name = document.querySelector("#nameOfCollection").value;
     const number = document.querySelector("#numberOfNfts").value;
@@ -40,21 +39,24 @@ function submitForm() {
         number: number,
         listPrice: listPrice,
         image: image,
-        description: description
+        description: description,
     };
 
     // store object into array
     productList.push(productDetails);
-    
+
     // clears user inputs in form
     clearInput();
 
     console.log(productList); // testing
-    alert("Thank you for your submission. Your NFT has been successfuly uploaded.");
-
+    alert(
+        "Thank you for your submission. Your NFT has been successfuly uploaded."
+    );
 } // End of submitForm function
 
-document.querySelector("button[type=submit]").addEventListener("click", event => {
-    event.preventDefault();
-    submitForm();
-});
+document
+    .querySelector("button[type=submit]")
+    .addEventListener("click", (event) => {
+        event.preventDefault();
+        submitForm();
+    });

@@ -72,13 +72,21 @@ class NftController {
         addLike(nft);
       });
     });
+
+    document
+      .querySelector(".selectpicker")
+      .addEventListener("change", function () {
+        console.log(
+          this.allNfts.filter((nft) => nft.category === "photography")
+        );
+      });
   }
 
   filter() {
-    const filtered = this.allNfts.filter(
+    const filtered2 = this.allNfts.filter(
       (nft) => nft.category === "photography"
     );
-    console.log(filtered);
+    console.log(filtered2);
   }
 }
 
@@ -96,8 +104,12 @@ const addLike = function (nft) {
   nft.like++;
 };
 
-const filterDropDown = function (event) {
+const filterDropdown = function (event) {
   console.log(event.target.value);
 };
 
-document.querySelector(".dropdown").addEventListener("click", filterDropDown);
+document
+  .querySelector(".selectpicker")
+  .addEventListener("change", filterDropdown);
+
+console.log(ass);

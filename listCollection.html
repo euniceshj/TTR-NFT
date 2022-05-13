@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- <style>
+        select option disabled { color: gray; }
+    </style> -->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,41 +35,54 @@
         <!-- Login Form -->
         <div class="container login-section col-md-6 col-xl-4 form-section">
             <div class="row">
-                <h1>List Your Collection</h1>
+                <h1>List Your NFT</h1>
             </div>
             
             <div class="row">
                 <form>
                     <!--- Name of collection field --->
                     <div class="form-group">
-                        <label for="nameOfCollection" class="form-margin">Name Of Collection</label>
-                        <input type="text" class="form-control collectionField-margin" id="nameOfCollection" aria-describedby="emailHelp" placeholder="Enter the name of your collection here">
+                        <label for="nameOfCollection" class="form-margin">Name Of NFT</label>
+                        <input required type="text" class="form-control collectionField-margin" id="nameOfCollection" aria-describedby="emailHelp" placeholder="Name of NFT">
                     </div>
 
                     <!--- Number of NFTs in collection field --->
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label for="numberOfNfts" class="form-margin">Number of NFTs in Collection</label>
                         <input type="number" min="1" data-bind="value:replyNumber" class="form-control collectionField-margin" id="numberOfNfts" placeholder="Min. 1 NFT">
+                    </div> -->
+                    
+                    <!-- Category Selection field -->
+                    <div class="form-group">
+                        <label for="nameOfCollection" class="form-margin">Category</label>
+                        <select required class="form-select collectionField-margin" aria-label="default select example" id="categoryField" style="color: grey;">
+                            <option selected disabled>Select a category for your NFT</option>
+                            <option >Art</option>
+                            <option >Photography</option>
+                            <option >Music</option>
+                            <option>Sports</option>
+                            <option >Collectibles</option>
+                        </select>
                     </div>
 
                     <!--- List Price field --->
                     <div class="form-group row">
                         <div class="col">
                             <label for="listPrice" class="form-margin"> List Price</label>
-                            <input type="text" class="form-control collectionField-margin" id="listPrice" aria-describedby="emailHelp" placeholder="Price of each NFT">
+                            <input required type="number" min="0.01" step="0.01" class="form-control collectionField-margin" id="listPrice" aria-describedby="emailHelp" placeholder="Price of each NFT in ETH">
                         </div>
                     </div>
                     
                     <div>
                         <div class="input-group mb-3 collectionField-margin">
-                            <input type="file" class="form-control" id="inputGroupFile02">
+                            <input required type="file" class="form-control" id="inputGroupFile02">
                             <label class="input-group-text" for="inputGroupFile02">Upload</label>
                         </div>
                     </div>
                 
                     <div class="form-group">
                         <label for="description" class="form-margin">Description</label>
-                        <textarea class="form-control form-margin collectionField-margin" id="description" rows="3" placeholder="Describe your collection here"></textarea></textarea> 
+                        <textarea required class="form-control form-margin collectionField-margin" id="description" rows="3" placeholder="Describe your collection here"></textarea></textarea> 
                     </div>
 
                     <div class="d-flex justify-content-center submitBtn-margin">
@@ -90,6 +106,11 @@
 
    <!-- Header and Footer Script -->
    <script src="js/baseStyle.js"></script>
+   <script>
+       document.getElementById("categoryField").addEventListener("change", function() {
+        document.getElementById("categoryField").style.color = "black";
+        });
+   </script>
 
   </body>
 </html>

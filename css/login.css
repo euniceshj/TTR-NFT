@@ -12,9 +12,13 @@ h1 {
     font-weight: bold;
 }
 
-.label-margin {
-    margin: 5px 0px;
+.disabled-option {
+    color: #999;
 }
+
+/* .label-margin {
+    margin: 5px 0px;
+} */
 
 .pw-margin {
     margin-top: 20px;

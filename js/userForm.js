@@ -23,11 +23,9 @@ function clearInput() {
 
 // function handle form submission
 function submitForm() {
-
     // store input values into variables
     const email = document.querySelector("#exampleInputEmail1").value;
     const password = document.querySelector("#exampleInputPassword1").value;
- 
 
     // create object to store values
     const userDetails = {
@@ -37,16 +35,19 @@ function submitForm() {
 
     // store object into array
     userList.push(userDetails);
-    
+
     // clears user inputs in form
     clearInput();
 
     console.log(userList); // testing
-    alert("Thank you for your submission. Your NFT has been successfuly uploaded.");
-
+    alert(
+        "Thank you for your submission. Your NFT has been successfuly uploaded."
+    );
 } // End of submitForm function
 
-document.querySelector("button[type=submit]").addEventListener("click", event => {
-    event.preventDefault();
-    submitForm();
-});
+document
+    .querySelector("button[type=submit]")
+    .addEventListener("click", (event) => {
+        event.preventDefault();
+        submitForm();
+    });

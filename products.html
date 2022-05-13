@@ -41,27 +41,23 @@
       <!-- innerHTML from CSS -->
     </div>
 
-
-  
- 
-
     <!-- link tabs-->
 
     <div class="btn-links">
       <div class="btn-group">
-        <button class="btn btn-lg">
+        <button class="btn btn-lg" id="photography">
           <i class="fa fa-camera"></i> Photography
         </button>
-        <button class="btn btn-lg">
+        <button class="btn btn-lg" id="music">
           <i class="fa fa-music"></i> Music
         </button>
-        <button class="btn btn-lg">
+        <button class="btn btn-lg" id="art">
           <i class="fa-solid fa-palette"></i> Art
         </button>
-        <button class="btn btn-lg">
+        <button class="btn btn-lg" id="sports">
           <i class="fa-solid fa-baseball-bat-ball"></i> Sports
         </button>
-        <button class="btn btn-lg">
+        <button class="btn btn-lg"id="collectibles">
           <i class="fa fa-tags"></i> Collectibles
         </button>
       </div>
@@ -71,7 +67,7 @@
     <div class="container-fluid-slim">
       <div class="product-header">
         <h2>Shop all NFTs</h2>
-        <div class="dropdown">
+          <div class="dropdown">
           <button
             class="btn dropdown-toggle"
             type="button"
@@ -82,21 +78,21 @@
             Select an option
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Art</a></li>
-            <li><a class="dropdown-item" href="#">Photography</a></li>
-            <li><a class="dropdown-item" href="#">Music</a></li>
-            <li><a class="dropdown-item" href="#">Sports</a></li>
-            <li><a class="dropdown-item" href="#">Collectibles</a></li>
+            <li><a class="dropdown-item" href="#" id="art2">Art</a></li>
+            <li><a class="dropdown-item" href="#" id="photography2">Photography</a></li>
+            <li><a class="dropdown-item" href="#" id="music2">Music</a></li>
+            <li><a class="dropdown-item" href="#" id="sports2">Sports</a></li>
+            <li><a class="dropdown-item" href="#" id="collectibles2">Collectibles</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!--Product listings-->
+        <!--Product listings-->
 
     <div class="container-fluid-slim">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <div class="col">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="nftController">
+        <!-- <div class="col">
           <div class="card border-dark">
             <div class="like-button">
               <img
@@ -364,7 +360,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
           
@@ -398,6 +394,7 @@
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
+                    id="nftImage"
                     src="images/jakub-durian-atGk-qalHsM-unsplash.jpg"
                     class="img-fluid rounded-start"
                     alt="..."
@@ -405,15 +402,15 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title modal-card-title">Portrait of a lady</h5>
-                    <p class="card-text">
+                    <h5 class="card-title modal-card-title" id="nftTitle">Portrait of a lady</h5>
+                    <p class="card-text" id="nftDescription">
                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam asperiores error libero qui molestiae, doloremque, ex veritatis ipsam voluptates, aspernatur blanditiis animi harum vero minima similique! Nisi dicta ipsam vero!
                     </p>
                     <p class="card-text">
-                      <p><small class="text-muted">Author: Mark Jenkins</small></p>
-                      <p><small class="text-muted">List price: $199</small></p>
-                      <p><small class="text-muted">#female #glasses #model #Photography </small></p>
-                      <p><small class="text-muted">109 views</small></p>
+                      <p><small class="text-muted" id="nftPrice">List price: $199</small></p>
+                      <p><small class="text-muted" id="nftHashtag">#female #glasses #model #Photography </small></p>
+                      <p><small class="text-muted" id="nftViews">109 views</small></p>
+                      <p><small class="text-muted" id="nftLikes">109 views</small></p>
                       
                     </p>
                   </div>
@@ -443,6 +440,8 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/nftController.js"></script>
+    <script src="./js/displayNft.js"></script>
     <script src="./js/baseStyle.js"></script>
   </body>
 </html>

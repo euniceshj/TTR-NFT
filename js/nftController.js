@@ -120,6 +120,18 @@ class NftController {
                     this.filterNftArray(category);
                 });
         });
+        
+        document.querySelector("#all").addEventListener("click", () => {
+            this.tempNfts = this.allNfts;
+            this.displayNft();
+            
+        })
+
+        document.querySelector("#id2").addEventListener("click", () => {
+            this.tempNfts = this.allNfts;
+            this.displayNft();
+            
+        })
     }
 
     //Method to filter array of NFT objects on category selected

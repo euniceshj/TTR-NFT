@@ -45,6 +45,9 @@
 
     <div class="btn-links">
       <div class="btn-group">
+        <button class="btn btn-lg" id="all">
+          <i class="fa-solid fa-maximize"></i> All
+        </button>
         <button class="btn btn-lg" id="photography">
           <i class="fa fa-camera"></i> Photography
         </button>
@@ -75,9 +78,10 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Select an option
+            Select a category
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#" id="id2">All</a></li>
             <li><a class="dropdown-item" href="#" id="art2">Art</a></li>
             <li><a class="dropdown-item" href="#" id="photography2">Photography</a></li>
             <li><a class="dropdown-item" href="#" id="music2">Music</a></li>
@@ -113,7 +117,6 @@
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card border-dark">
             <div class="like-button">
@@ -135,7 +138,6 @@
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card border-dark">
             <div class="like-button">
@@ -157,7 +159,6 @@
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card border-dark">
             <div class="like-button">
@@ -179,7 +180,6 @@
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card border-dark">
             <div class="like-button">
@@ -201,7 +201,6 @@
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card border-dark">
             <div class="like-button">
@@ -223,7 +222,6 @@
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card border-dark">
             <div class="like-button">
@@ -245,7 +243,6 @@
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card border-dark">
             <div class="like-button">
@@ -267,7 +264,6 @@
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card border-dark">
             <div class="like-button">
@@ -289,7 +285,6 @@
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card border-dark">
             <div class="like-button">
@@ -311,7 +306,6 @@
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card border-dark">
             <div class="like-button">
@@ -333,7 +327,6 @@
             </div>
           </div>
         </div>
-
         <div class="col">
           <div class="card border-dark">
             <div class="like-button">
@@ -420,9 +413,11 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary">Buy now</button>
-            <button class="btn btn-primary likeModal">
-            Like <i class="fa-solid fa-thumbs-up"></i>
-            </button>
+            <div id="nftIdAssign">
+              <!-- <button class="btn btn-primary">
+              Like <i class="fa-solid fa-thumbs-up"></i>
+              </button> -->
+            </div>
             <button
               type="button"
               class="btn btn-secondary"

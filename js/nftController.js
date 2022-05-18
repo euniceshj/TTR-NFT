@@ -1,8 +1,8 @@
 class NftController {
-    constructor(currentId = 0) {
+    constructor() {
         this.allNfts = [];
         this.tempNfts = [];
-        this.currentId = currentId;
+        this.currentId = 0;
         this._filters = [
             "photography",
             "music",
@@ -77,13 +77,12 @@ class NftController {
         });
 
         document.querySelector("#nftController").innerHTML = nftInfo;
-        console.log(nftInfo);
 
         //Add eventlistener to all the buttons to display info in modal
         this.tempNfts.forEach((nft) => {
             document
                 .getElementById(nft.id)
-                .addEventListener("click", function () {
+                .addEventListener("click", () => {
                     displayNftDetail(nft);
                 });
         });
@@ -94,9 +93,10 @@ class NftController {
             document
                 .getElementById(nftid)
                 .addEventListener("click", function () {
-                    addLike(nft);
+                    nft.like++;
                 });
         });
+        
     } //end of displayNft
 
     //Method to filter array of NFT object based on category when user clicks
@@ -136,7 +136,9 @@ class NftController {
         console.log(this.tempNfts);
         this.displayNft();
     }
+
 } //End of productController class
+
 
 //function to add NFT values to modal
 const displayNftDetail = function (nft) {
@@ -147,9 +149,19 @@ const displayNftDetail = function (nft) {
     document.querySelector("#nftHashtag").innerHTML = nft.hashtag;
     document.querySelector("#nftViews").innerHTML = nft.view;
     document.querySelector("#nftLikes").innerHTML = `No. of likes: ${nft.like}`;
+    document.querySelector("#nftIdAssign").innerHTML = `
+        <button id="${nft.id}a" class="btn btn-primary">
+        Like <i class="fa-solid fa-thumbs-up"></i>
+        </button>
+    `;
+    
+    // to add likes when like button in modal is clicked
+    let nftid2 = nft.id + "a";
+    document
+        .getElementById(nftid2)
+        .addEventListener("click", () => {
+            nft.like++;
+            document.querySelector("#nftLikes").innerHTML = `No. of likes: ${nft.like}`;
+        });
 };
 
-//Method to increase the number of likes by 1
-const addLike = function (nft) {
-    nft.like++;
-};

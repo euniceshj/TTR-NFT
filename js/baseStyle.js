@@ -53,7 +53,7 @@ document.querySelector("#navbar-section").innerHTML = `
                         <div>
                             <i class="bi bi-wallet2 d-none d-lg-block text-secondary"></i>
                         </div>
-                        <a href="" class="nav-link button btn-primary rounded text-center text-white d-block d-lg-none">Connect Wallet</a>
+                        <a href="loginPage.html" class="nav-link button btn-primary rounded text-center text-white d-block d-lg-none">Log In</a>
                     </li>
                 </ul>
             </div>

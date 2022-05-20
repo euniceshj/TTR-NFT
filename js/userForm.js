@@ -27,22 +27,51 @@ function submitForm() {
     const email = document.querySelector("#exampleInputEmail1").value;
     const password = document.querySelector("#exampleInputPassword1").value;
 
-    // create object to store values
-    const userDetails = {
-        email: email,
-        password: password,
-    };
+    // pattern for checking user email and password
+    const emailPattern = /@/g && /.com/g;
+    const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,32}$/g;
+    let correctInput = true; 
+    
+    // check and show error message for email
+    if (email == "" || !emailPattern.test(email)) {
+        document.querySelector("#exampleInputEmail1").setCustomValidity("Please input correct email format.");
+        document.querySelector("#exampleInputEmail1").reportValidity();
+        correctInput = false;
+    }
 
-    // store object into array
-    userList.push(userDetails);
+    // check and show error message for password
+    if (password == "" || !passwordPattern.test(password)) {
+        document.querySelector("#exampleInputPassword1").setCustomValidity("Please ensure your password has at least 1 digit, 1 lowercase, uppercase & special character. Password length between 8-32.");
+        document.querySelector("#exampleInputPassword1").reportValidity();
+        correctInput = false;
+    }
+    
+    if (correctInput) {
 
-    // clears user inputs in form
-    clearInput();
+        // clear error message
+        document.querySelector("#exampleInputEmail1").setCustomValidity("");
+        document.querySelector("#exampleInputEmail1").reportValidity();
+        document.querySelector("#exampleInputPassword1").setCustomValidity("");
+        document.querySelector("#exampleInputPassword1").reportValidity();
 
-    console.log(userList); // testing
-    alert(
-        "Thank you for your submission. Your NFT has been successfuly uploaded."
-    );
+        // create object to store values
+        const userDetails = {
+            email: email,
+            password: password,
+        };
+
+        // store object into array
+        userList.push(userDetails);
+
+        // clears user inputs in form
+        clearInput();
+
+        console.log(userList); // testing
+        alert(
+            "You have successfuly logged in!."
+        );
+
+    }
 } // End of submitForm function
 
 document

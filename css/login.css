@@ -25,7 +25,7 @@ h1 {
 }
 
 .forgetPW-margin {
-    margin: 5px 0px 100px 0px;
+    margin: 5px 0px 50px 0px;
 }
 
 .button-margin {
@@ -33,9 +33,13 @@ h1 {
 }
 
 .submitBtn-margin {
-    margin: 20px 0px;
+    margin: 20px 0px 150px;
 }
 
 .collectionField-margin {
     margin: 5px 0px 20px 0px;
+}
+
+.loginBtn-margin {
+    margin: 0 0 150px;
 }

@@ -48,6 +48,9 @@ function submitForm() {
     // clears user inputs in form
     clearInput();
 
+    // reset category field to grey
+    document.getElementById("categoryField").style.color = "grey";
+
     console.log(productList); // testing
     alert(
         "Thank you for your submission. Your NFT has been successfuly uploaded."
@@ -55,7 +58,7 @@ function submitForm() {
 } // End of submitForm function
 
 document
-    .querySelector("button[type=click]")
+    .querySelector("button[type=submit]")
     .addEventListener("click", (event) => {
         
         event.preventDefault;

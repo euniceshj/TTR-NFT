@@ -18,7 +18,7 @@ const productList = [];
 // function clears user inputs in form
 function clearInput() {
     document.querySelector("#nameOfCollection").value = "";
-    document.querySelector("#numberOfNfts").value = "";
+    document.querySelector("#categoryField").value = "";
     document.querySelector("#listPrice").value = "";
     document.querySelector("#inputGroupFile02").value = "";
     document.querySelector("#description").value = "";
@@ -28,7 +28,7 @@ function clearInput() {
 function submitForm() {
     // store input values into variables
     const name = document.querySelector("#nameOfCollection").value;
-    const number = document.querySelector("#numberOfNfts").value;
+    const category = document.querySelector("#categoryField").value;
     const listPrice = document.querySelector("#listPrice").value;
     const image = document.querySelector("#inputGroupFile02").value;
     const description = document.querySelector("#description").value;
@@ -36,7 +36,7 @@ function submitForm() {
     // create object to store values
     const productDetails = {
         name: name,
-        number: number,
+        category: category,
         listPrice: listPrice,
         image: image,
         description: description,
@@ -48,6 +48,9 @@ function submitForm() {
     // clears user inputs in form
     clearInput();
 
+    // reset category field to grey
+    document.getElementById("categoryField").style.color = "grey";
+
     console.log(productList); // testing
     alert(
         "Thank you for your submission. Your NFT has been successfuly uploaded."
@@ -57,6 +60,14 @@ function submitForm() {
 document
     .querySelector("button[type=submit]")
     .addEventListener("click", (event) => {
-        event.preventDefault();
-        submitForm();
+        
+        event.preventDefault;
+        if (document.querySelector("form").checkValidity()) {
+            submitForm();
+        }
+        
     });
+
+
+
+

@@ -3,7 +3,7 @@ class NftController {
         this.allNfts = [];
         this.tempNfts = [];
         this.currentId = 0;
-        this._filters = [
+        this.filters = [
             "all",
             "photography",
             "music",
@@ -19,6 +19,7 @@ class NftController {
         ];
 
         this.like = 0; // Initialize initial likes to zero, will increase per click with addLike() method
+        this.counter = 0; // Initialize display counter to zero
     }
 
     addNft(title, imageURL, price, description, hashtag, view, category) {
@@ -48,9 +49,10 @@ class NftController {
         let nftid = "";
 
         // initialise page display
-        if (this.tempNfts.length == 0) {
+        if (this.counter == 0) {
             this.tempNfts = this.allNfts;
         }
+        this.counter++;
 
         this.tempNfts.forEach((nft, index) => {
             nftid = "nft" + index; //nft1, nft2, nft3....
@@ -109,7 +111,7 @@ class NftController {
 
     // Method to filter through category and call filterNftArray() method
     filterNftCategory() {
-        this._filters.forEach((category) => {
+        this.filters.forEach((category) => {
             document
                 .getElementById(category)
                 .addEventListener("click", (event) => {

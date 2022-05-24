@@ -83,7 +83,7 @@ nftCollection.addNft(
 nftCollection.addNft(
     "In The Boxing Ring",
     "images/image-from-rawpixel-id-3561577-jpeg.jpg",
-    "0.3=08 Eth",
+    "0.38 Eth",
     "A 1909 Stag at Sharkey's Painting, originally from the Cleveland Museum of Art",
     "#sports #boxing #ring",
     "299 views",
@@ -242,4 +242,12 @@ nftCollection.addNft(
     "photography"
 );
 
-nftCollection.displayNft();
+// add try catch to bypass error
+try{
+    nftCollection.displayNft();
+}
+catch(error){
+    // empty
+}
+
+nftCollection.displayCarousel();

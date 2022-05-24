@@ -41,8 +41,9 @@ class NftController {
 
     } //End of addNft method
 
-    //method to display array of NFT objects to browser
+    //method to display array of NFT objects to product page
     displayNft() {
+
         let nftInfo = "";
         let nftid = "";
 
@@ -80,7 +81,7 @@ class NftController {
         });
 
         document.querySelector("#nftController").innerHTML = nftInfo;
-
+    
         // Add eventlistener to all the buttons to display info in modal
         this.tempNfts.forEach((nft) => {
             document
@@ -103,10 +104,10 @@ class NftController {
         //On user clicks, filter NFT based on category and display
         this.filterNftCategory();
         console.log(this.tempNfts); // test
-
+        
     } //end of displayNft method
 
-    //Method to filter through category and call filterNftArray() method
+    // Method to filter through category and call filterNftArray() method
     filterNftCategory() {
         this._filters.forEach((category) => {
             document
@@ -123,7 +124,14 @@ class NftController {
                 this.filterNftArray(searchInput);  
             }
         });
-    }
+
+        document.querySelector("#searchBar2").addEventListener("keypress", (e) =>{
+            if (e.key == "Enter") {
+                let searchInput = e.target.value;
+                this.filterNftArray(searchInput);  
+            }
+        });
+    } // end of method
 
     //Method to filter array of NFT objects based on category selected
     filterNftArray(filterValue) {
@@ -146,7 +154,93 @@ class NftController {
         }
         
         this.displayNft(this.tempNfts);
-    }
+    } // end of emthod
+
+    //method to display array of NFT objects to home page
+    displayCarousel() {
+
+        let count = 0;
+        let nftInfo = "";
+        let nftid = "";
+        let topSection1 = `
+            <div class="carousel-item active">
+                <div class="row py-5">
+        `;
+        let topSection2 = `
+            <div class="carousel-item">
+                <div class="row py-5">
+        `;
+        let bottomSection = `
+                </div>
+            </div>
+        `;
+        let topSubSection1 = `
+                    <div class="card col-12 col-md-6 col-lg-4 border-0 px-4">
+        `;
+        let topSubSection2 = `
+                    <div class="card col-12 col-md-6 col-lg-4 border-0 d-none d-md-block d-lg-block px-4">
+        `;
+        let topSubSection3 = `
+                    <div class="card col-12 col-md-6 col-lg-4 border-0 d-none d-lg-block px-4">
+        `;
+        let bottomSubSection = `
+                    </div>
+        `;
+
+        this.allNfts.forEach((nft) => {
+            
+            // random status generator
+            let randInt = Math.floor(Math.random() * 2);
+            let status = false;
+            (randInt == 0) ? status = true : status = false;
+            
+            // if statement to determine whether to add NFT to carousel
+            if (count < 9 && status) {
+                
+                console.log(count); //nft0, nft1, nft2....
+
+                // add outer layer starting div
+                if (count == 0) {
+                    nftInfo += topSection1;
+                }
+                else if (count % 3 == 0) {
+                    nftInfo += topSection2;
+                }
+                
+                // add inner layer starting div
+                if (count % 3 == 0) {
+                    nftInfo += topSubSection1;
+                }
+                else if (count % 3 == 1) {
+                    nftInfo += topSubSection2;
+                }
+                else {
+                    nftInfo += topSubSection3;
+                }
+
+                nftInfo += `
+                            <img src="${nft.imageURL}" class="card-img-top rounded" alt="...">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end px-4">
+                                <h5 class="card-title fw-bold text-black bg-secondary bg-opacity-50 display-6">${nft.title}</h5>
+                                <p class="card-text fw-bold fs-4 text-black bg-secondary bg-opacity-50">${nft.hashtag}</p>
+                            </div>
+                `;
+
+                // add inner layer closing div
+                nftInfo += bottomSubSection;
+                // add outer layer closing div
+                if (count != 0 && count % 3 == 2) {
+                    nftInfo += bottomSection;
+                }
+
+                count++;
+            }
+            
+        });
+
+        document.querySelector("#carouselDisplay").innerHTML = nftInfo;
+
+    } // end of method
 
 } //End of productController class
 

@@ -124,7 +124,6 @@ class NftController {
         document.querySelector("#all").addEventListener("click", () => {
             this.tempNfts = this.allNfts;
             this.displayNft();
-            
         })
 
         document.querySelector("#id2").addEventListener("click", () => {
@@ -157,7 +156,7 @@ const displayNftDetail = function (nft) {
     document.querySelector("#nftTitle").innerHTML = nft.title;
     document.querySelector("#nftImage").src = nft.imageURL;
     document.querySelector("#nftDescription").innerHTML = nft.description;
-    document.querySelector("#nftPrice").innerHTML = `Price: $${nft.price}`;
+    document.querySelector("#nftPrice").innerHTML = `Price: ${nft.price}`;
     document.querySelector("#nftHashtag").innerHTML = nft.hashtag;
     document.querySelector("#nftViews").innerHTML = nft.view;
     document.querySelector("#nftLikes").innerHTML = `No. of likes: ${nft.like}`;

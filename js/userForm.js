@@ -76,7 +76,7 @@ function submitForm() {
 
 document
     .querySelector("button[type=submit]")
-    .addEventListener("click", (event) => {
+    .addEventListener("submit", (event) => {
         event.preventDefault();
         submitForm();
     });

@@ -59,9 +59,9 @@ function submitForm() {
 
 document
     .querySelector("button[type=submit]")
-    .addEventListener("click", (event) => {
+    .addEventListener("submit", (event) => {
         
-        event.preventDefault;
+        event.preventDefault();
         if (document.querySelector("form").checkValidity()) {
             submitForm();
         }

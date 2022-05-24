@@ -150,4 +150,4 @@ nftCollection.addNft(
     "music"
 );
 
-nftCollection.displayNftMain();
+nftCollection.displayNft();

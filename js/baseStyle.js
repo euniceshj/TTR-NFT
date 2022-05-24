@@ -7,7 +7,7 @@ document.querySelector("#navbar-section").innerHTML = `
            
             <div class="navbar-header col-4 col-sm-6 px-2 d-none d-sm-block d-lg-none display-4">
                 <div class="input-group">
-                    <input class="form-control border-end-0 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                    <input id="searchBar" class="form-control border-end-0 rounded-pill" type="text" placeholder="Search" aria-label="Search">
                     <span>
                         <button class="btn btn-outline-secondary bg-white border-0 rounded-pill offset-n40" type="button">
                             <i class="bi bi-search"></i>
@@ -24,16 +24,13 @@ document.querySelector("#navbar-section").innerHTML = `
   
                     <li class="nav-item col-12 col-lg-3 d-block d-sm-none d-lg-block">
                         <div class="input-group">
-                            <input class="form-control border-end-0 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                            <input id="searchBar2" class="form-control border-end-0 rounded-pill" type="text" placeholder="Search" aria-label="Search">
                             <span>
                                 <button class="btn btn-outline-secondary bg-white border-0 rounded-pill offset-n75" type="button">
                                     <i class="bi bi-search"></i>
                                 </button>
                             </span>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fst-italic" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item fst-italic">
                         <a class="nav-link" href="aboutme.html">About Us</a>

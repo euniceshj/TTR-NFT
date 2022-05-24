@@ -4,17 +4,25 @@ class NftController {
         this.tempNfts = [];
         this.currentId = 0;
         this._filters = [
+            "all",
             "photography",
             "music",
             "art",
             "sports",
             "collectibles",
+            "all2",
+            "photography2",
+            "music2",
+            "art2",
+            "sports2",
+            "collectibles2",
         ];
 
         this.like = 0; // Initialize initial likes to zero, will increase per click with addLike() method
     }
 
     addNft(title, imageURL, price, description, hashtag, view, category) {
+        
         this.currentId++;
 
         const nft = {
@@ -30,55 +38,50 @@ class NftController {
         };
 
         this.allNfts.push(nft);
-    } //End of addProduct
 
-    //Main display method to display all products and filter subsequently on user click on button or dropdown
-    displayNftMain() {
-        //Assign database to temp array
-        this.tempNfts = this.allNfts;
-        this.displayNft();
-        console.log(this.allNfts);
-
-        //On user clicks, filter NFT based on category and display
-        this.filterNftCategory();
-    } //end of main display method
+    } //End of addNft method
 
     //method to display array of NFT objects to browser
     displayNft() {
         let nftInfo = "";
         let nftid = "";
 
+        // initialise page display
+        if (this.tempNfts.length == 0) {
+            this.tempNfts = this.allNfts;
+        }
+
         this.tempNfts.forEach((nft, index) => {
             nftid = "nft" + index; //nft1, nft2, nft3....
             nftInfo += `
-        <div class="col">
-          <div class="card border-dark">
-            <div class="like-button">
-              <img
-                src="${nft.imageURL}"
-                class="card-img-top"
-                alt="..."
-              />
-              <button class="btn btn-lg" id="${nftid}">
-                <i class="fa-solid fa-heart"></i>
-              </button>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">${nft.title}</h4>
-              <div class="item-price">
-                <h5>List price: ${nft.price}</h5>
-                <a id="${nft.id}" href="#" class="btn btn-primary" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">Buy now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
+                <div class="col">
+                    <div class="card border-dark">
+                        <div class="like-button">
+                        <img
+                            src="${nft.imageURL}"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <button class="btn btn-lg" id="${nftid}">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">${nft.title}</h4>
+                        <div class="item-price">
+                            <h5>List price: ${nft.price}</h5>
+                            <a id="${nft.id}" href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Buy now</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            `;
         });
 
         document.querySelector("#nftController").innerHTML = nftInfo;
 
-        //Add eventlistener to all the buttons to display info in modal
+        // Add eventlistener to all the buttons to display info in modal
         this.tempNfts.forEach((nft) => {
             document
                 .getElementById(nft.id)
@@ -96,23 +99,16 @@ class NftController {
                     nft.like++;
                 });
         });
-        
-    } //end of displayNft
 
-    //Method to filter array of NFT object based on category when user clicks
+        //On user clicks, filter NFT based on category and display
+        this.filterNftCategory();
+        console.log(this.tempNfts); // test
+
+    } //end of displayNft method
+
+    //Method to filter through category and call filterNftArray() method
     filterNftCategory() {
         this._filters.forEach((category) => {
-            document
-                .getElementById(category)
-                .addEventListener("click", (event) => {
-                    event.preventDefault();
-                    return this.filterNftArray(category);
-                });
-        });
-
-        // Create a separate ID for dropdown menu
-        this._filters.forEach((category) => {
-            category = category + "2";
             document
                 .getElementById(category)
                 .addEventListener("click", (event) => {
@@ -120,33 +116,36 @@ class NftController {
                     this.filterNftArray(category);
                 });
         });
-        
-        document.querySelector("#all").addEventListener("click", () => {
-            this.tempNfts = this.allNfts;
-            this.displayNft();
-            
-        })
 
-        document.querySelector("#id2").addEventListener("click", () => {
-            this.tempNfts = this.allNfts;
-            this.displayNft();
-            
-        })
+        document.querySelector("#searchBar").addEventListener("keypress", (e) =>{
+            if (e.key == "Enter") {
+                let searchInput = e.target.value;
+                this.filterNftArray(searchInput);  
+            }
+        });
     }
 
-    //Method to filter array of NFT objects on category selected
-    filterNftArray(category) {
+    //Method to filter array of NFT objects based on category selected
+    filterNftArray(filterValue) {
         this.tempNfts = [];
 
-        category = category.match(/[a-z]/gi).join("");
-        const filterData = this.allNfts.filter(
-            (nft) => nft.category === category
-        );
-        filterData.forEach((nft) => {
-            this.tempNfts.push(nft);
-        });
-        console.log(this.tempNfts);
-        this.displayNft();
+        if (filterValue == "all" || filterValue == "all2") {
+            this.tempNfts = this.allNfts;
+        }
+        else {
+            filterValue = filterValue.match(/[a-z]/gi).join("").toLowerCase();
+            let filterData = this.allNfts.filter((nft) => 
+                nft.category.toLowerCase().includes(filterValue) ||
+                nft.title.toLowerCase().includes(filterValue) ||
+                nft.description.toLowerCase().includes(filterValue) ||
+                nft.hashtag.toLowerCase().includes(filterValue)
+            );
+            filterData.forEach((nft) => {
+                this.tempNfts.push(nft);
+            });
+        }
+        
+        this.displayNft(this.tempNfts);
     }
 
 } //End of productController class

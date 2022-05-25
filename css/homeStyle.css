@@ -14,6 +14,12 @@ header {
     opacity: 70%;
 }
 
+.create-btn:hover {
+    color: #0d6efd;
+    border-color: #0d6efd;
+    background-color: rgb(240, 234, 234) !important;
+}
+
 /* Carousel Section */
 .card-img-top {
     height: 40vw;

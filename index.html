@@ -41,14 +41,18 @@
       <header class="row align-items-center">
 
         <div class="header-con1 col-12 col-lg-5 justify-content-center p-5">
-          <h2 class="fw-bold">Unravel the best NFTs in the metaverse</h2>
-          <h3 class="pb-5 fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium suscipit eros. Pellentesque vel sapien turpis. In eu neque vitae erat blandit commodo ac ut nibh.</h3>
+          <h1 class="fw-bold">Unravel the best NFTs in the Metaverse</h1>
+          <h4 class="pb-5 fst-italic text-secondary">TTR is the leading community run NFT Marketplace. Join us and venture into the vast unknowns.</h4>
           <div class="row">
             <div class="col">
-              <button type="button" class="btn btn-primary fw-bold w-100">Explore</button>
+              <a href="products.html">
+                <button type="button" class="btn btn-primary shadow fw-bold w-100">Explore</button>
+              </a>
             </div>
             <div class="col px-3">
-              <button type="button" class="btn btn-outline-primary fw-bold bg-white w-100">Create NFT</button>
+              <a href="loginPage.html">
+                <button type="button" class="create-btn btn btn-outline-primary shadow fw-bold bg-white w-100">Create NFT</button>
+              </a>
             </div>
           </div>
         </div>
@@ -71,9 +75,9 @@
               <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
 
-            <div class="carousel-inner">
+            <div id="carouselDisplay" class="carousel-inner">
   
-              <div class="carousel-item active">
+              <!-- <div class="carousel-item active">
                 <div class="row py-5">
                   <div class="card col-12 col-md-6 col-lg-4 border-0 px-4">
                     <img src="images/nft-collage-1.jpg" class="card-img-top rounded" alt="...">
@@ -149,7 +153,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
             </div>
 
@@ -174,17 +178,17 @@
           <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center py-4">
             <i class="bi bi-compass display-3 text-info"></i>
             <h3 class="fw-bold">Explore</h3>
-            <h4 class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium suscipit eros. Pellentesque vel sapien turpis.</h4>
+            <h4 class="text-center pt-3">Still thinking? No worries. Come explore what we have to offer before you decide to join.</h4>
           </div>
           <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center py-4">
             <i class="bi bi-wallet2 display-3 text-info"></i>
             <h3 class="fw-bold">Create an account</h3>
-            <h4 class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium suscipit eros. Pellentesque vel sapien turpis.</h4>
+            <h4 class="text-center pt-3">Create your account to have full access to all the nifty features on our marketplace.</h4>
           </div>
           <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center py-4">
             <i class="bi bi-receipt display-3 text-info"></i>
             <h3 class="fw-bold">List your NFTs</h3>
-            <h4 class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium suscipit eros. Pellentesque vel sapien turpis.</h4>
+            <h4 class="text-center pt-3">Customise your NFT listings in the most unique way possible. You list, we sell. It is that simple!</h4>
           </div>
         </div>
       </div>
@@ -220,6 +224,8 @@
 
     <!-- Header and Footer Script -->
     <script src="js/baseStyle.js"></script>
+    <script src="js/nftController.js"></script>
+    <script src="js/displayNft.js"></script>
 
   </body>
 </html>

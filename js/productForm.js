@@ -60,11 +60,18 @@ function submitForm() {
 document
     .querySelector("button[type=submit]")
     .addEventListener("submit", (event) => {
-        
         event.preventDefault();
+    });
+
+document
+    .querySelector("button[type=submit]") 
+    .addEventListener("click", (event) => {
+        
         if (document.querySelector("form").checkValidity()) {
             submitForm();
+            console.log("sucess");
         }
+        event.preventDefault();
         
     });
 

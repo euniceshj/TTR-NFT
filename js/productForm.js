@@ -60,13 +60,13 @@ function submitForm() {
 document
     .querySelector("button[type=submit]")
     .addEventListener("submit", (event) => {
-        
+
     });
 
 document
     .querySelector("button[type=submit]") 
     .addEventListener("click", (event) => {
-        
+
         if (document.querySelector("form").checkValidity()) {
             submitForm();
         }

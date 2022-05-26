@@ -242,12 +242,12 @@ nftCollection.addNft(
     "photography"
 );
 
-// check if css #id exists before calling displayNft method() 
-if ( document.querySelector("#nftController") != null) {
+// add try catch to bypass error
+try{
     nftCollection.displayNft();
 }
-
-// check if css #id exists before calling displayCarousel method()
-if ( document.querySelector("#carouselDisplay") != null) {
-    nftCollection.displayCarousel();
+catch(error){
+    // empty
 }
+
+nftCollection.displayCarousel();

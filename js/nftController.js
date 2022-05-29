@@ -114,49 +114,62 @@ class NftController {
         this.filters.forEach((category) => {
             document
                 .getElementById(category)
-                .addEventListener("click", (event) => {
-                    event.preventDefault();
-                    this.filterNftArray(category);
+                .addEventListener("click", (e) => {
+                    e.preventDefault();
+                    this.filterNftArray(category, e);
                 });
         });
 
         document.querySelector("#searchBar").addEventListener("keypress", (e) =>{
             if (e.key == "Enter") {
                 let searchInput = e.target.value;
-                this.filterNftArray(searchInput);  
+                this.filterNftArray(searchInput, e);  
             }
         });
 
         document.querySelector("#searchBar2").addEventListener("keypress", (e) =>{
             if (e.key == "Enter") {
                 let searchInput = e.target.value;
-                this.filterNftArray(searchInput);  
+                this.filterNftArray(searchInput, e);  
             }
         });
     } // end of method
 
     //Method to filter array of NFT objects based on category selected
-    filterNftArray(filterValue) {
+    filterNftArray(filterValue, event) {
         this.tempNfts = [];
 
-        if (filterValue == "all" || filterValue == "all2") {
+        // remove digits from css selector ID
+        filterValue = filterValue.match(/[a-z]/gi).join("").toLowerCase();
+
+        if (filterValue == "all") {
             this.tempNfts = this.allNfts;
         }
         else {
             filterValue = filterValue.match(/[a-z]/gi).join("").toLowerCase();
-            let filterData = this.allNfts.filter((nft) => 
-                nft.category.toLowerCase().includes(filterValue) ||
-                nft.title.toLowerCase().includes(filterValue) ||
-                nft.description.toLowerCase().includes(filterValue) ||
-                nft.hashtag.toLowerCase().includes(filterValue)
-            );
+            let filterData = [];
+            
+            if (event.target.id.includes("searchBar")) {
+                filterData = this.allNfts.filter((nft) => 
+                    nft.category.toLowerCase().includes(filterValue) ||
+                    nft.title.toLowerCase().includes(filterValue) ||
+                    nft.description.toLowerCase().includes(filterValue) ||
+                    nft.hashtag.toLowerCase().includes(filterValue)
+                );
+            }
+            else {
+                filterData = this.allNfts.filter((nft) => 
+                    nft.category.toLowerCase().includes(filterValue)
+                );
+            }
+
             filterData.forEach((nft) => {
                 this.tempNfts.push(nft);
             });
         }
         
         this.displayNft(this.tempNfts);
-    } // end of emthod
+    } // end of method
 
     //method to display array of NFT objects to home page
     displayCarousel() {
@@ -223,8 +236,8 @@ class NftController {
                 nftInfo += `
                             <img src="${nft.imageURL}" class="card-img-top rounded" alt="...">
                             <div class="card-img-overlay d-flex flex-column justify-content-end px-4">
-                                <h5 class="card-title fw-bold text-black bg-secondary bg-opacity-50 display-6">${nft.title}</h5>
-                                <p class="card-text fw-bold fs-4 text-black bg-secondary bg-opacity-50">${nft.hashtag}</p>
+                                <h5 class="card-title fw-bold text-white bg-secondary bg-opacity-75 display-6 ps-2 overflow-hidden align-middle" style="height: 3rem;">${nft.title}</h5>
+                                <p class="card-text fw-bold fs-4 text-white bg-secondary bg-opacity-75 ps-2">Category: #${nft.category}</p>
                             </div>
                 `;
 

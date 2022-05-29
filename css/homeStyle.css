@@ -22,8 +22,19 @@ header {
 
 /* Carousel Section */
 .card-img-top {
-    height: 40vw;
-    object-fit: cover;
+    height: 40vh;
+}
+
+@media only screen and (min-width: 992px) {
+    .card-img-top {
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .card-img-top {
+        height: 60vh;
+    }
 }
 
 .carousel-inner {

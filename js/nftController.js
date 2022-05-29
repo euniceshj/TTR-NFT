@@ -234,9 +234,9 @@ class NftController {
                 }
 
                 nftInfo += `
-                            <img src="${nft.imageURL}" class="card-img-top rounded" alt="...">
+                            <img src="${nft.imageURL}" class="card-img-top rounded d-flex img-fluid" alt="...">
                             <div class="card-img-overlay d-flex flex-column justify-content-end px-4">
-                                <h5 class="card-title fw-bold text-white bg-secondary bg-opacity-75 display-6 ps-2 overflow-hidden align-middle" style="height: 3rem;">${nft.title}</h5>
+                                <h5 class="card-title fw-bold text-white bg-secondary bg-opacity-75 display-6 ps-2 overflow-hidden text-nowrap d-inline-block text-truncate">${nft.title}</h5>
                                 <p class="card-text fw-bold fs-4 text-white bg-secondary bg-opacity-75 ps-2">Category: #${nft.category}</p>
                             </div>
                 `;
